@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+
+<config>
+	<modules>
+		<Aqope_Banner>
+			<version>0.0.1</version>
+		</Aqope_Banner>
+	</modules>
+	<global>
+		<helpers>
+			<aqope_banner>
+				<class>Aqope_Banner_Helper</class>
+			</aqope_banner>
+		</helpers>
+	</global>
+</config>

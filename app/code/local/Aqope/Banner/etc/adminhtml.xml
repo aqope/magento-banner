@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <cms>
+            <children>
+                <aqope translate="title" module="aqope_banner">
+                    <title>Banner Managment</title>
+                    <sort_order>50</sort_order>
+                </aqope>
+            </children>
+        </cms>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <cms>
+                        <children>
+                            <aqope translate="title" module="aqope_banner">
+                                <title>Banner Managment</title>
+                                <sort_order>50</sort_order>
+                            </aqope>
+                        </children>
+                    </cms>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
