@@ -7,10 +7,55 @@
 		</Aqope_Banner>
 	</modules>
 	<global>
+		<models>
+			<banner>
+				<class>Aqope_Banner_Model</class>
+				<resourceModel>aqope_banner_resource</resourceModel>
+			</banner>
+			<banner_resource>
+				<class>Aqope_Banner_Model_Resource</class>
+				<entities>
+					<banner>
+						<table>aqope_banner</table>
+					</banner>
+				</entities>
+			</banner_resource>
+		</models>
+
+		<resources>
+			<banner_write>
+				<connection>
+					<use>core_writer</use>
+				</connection>
+			</banner_write>
+			<banner_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</banner_read>
+		</resources>
+
+		<blocks>
+			<banner>
+				<class>Aqope_Banner_Block</class>
+			</banner>
+		</blocks>
+
 		<helpers>
-			<aqope_banner>
+			<banner>
 				<class>Aqope_Banner_Helper</class>
-			</aqope_banner>
+			</banner>
 		</helpers>
 	</global>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<banner before="Mage_Adminhtml">Aqope_Banner_Adminhtml</banner>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
 </config>

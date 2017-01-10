@@ -3,8 +3,20 @@
     <menu>
         <cms>
             <children>
-                <aqope translate="title" module="aqope_banner">
+                <aqope translate="title" module="banner">
                     <title>Banner Managment</title>
+                    <children>
+                        <banners translate="title" module="banner">
+                            <title>Banners</title>
+                            <sort_order>10</sort_order>
+                            <action>adminhtml/banner_index</action>
+                        </banners>
+                        <layout translate="title" module="banner">
+                            <title>Layout</title>
+                            <sort_order>20</sort_order>
+                            <action>adminhtml/banner_index</action>
+                        </layout>
+                    </children>
                     <sort_order>50</sort_order>
                 </aqope>
             </children>
@@ -16,7 +28,7 @@
                 <children>
                     <cms>
                         <children>
-                            <aqope translate="title" module="aqope_banner">
+                            <aqope translate="title" module="banner">
                                 <title>Banner Managment</title>
                                 <sort_order>50</sort_order>
                             </aqope>
