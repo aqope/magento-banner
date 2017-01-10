@@ -4,6 +4,18 @@ class Aqope_Banner_Adminhtml_Banner_IndexController extends Mage_Adminhtml_Contr
 {
     public function indexAction()
     {
-        die('this does work');
+        $this->loadLayout();
+        $this->_addContent($this->getLayout()->createBlock('banner/adminhtml_banner'));
+        $this->renderLayout();
+    }
+
+    public function gridAction()
+    {
+        $this->loadLayout();
+        $this->getResponse()->setBody(
+            $this->getLayout()->createBlock('banner/adminhtml_banner_grid')
+                ->toHtml()
+        );
+
     }
 }

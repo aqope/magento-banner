@@ -10,7 +10,7 @@
 		<models>
 			<banner>
 				<class>Aqope_Banner_Model</class>
-				<resourceModel>aqope_banner_resource</resourceModel>
+				<resourceModel>banner_resource</resourceModel>
 			</banner>
 			<banner_resource>
 				<class>Aqope_Banner_Model_Resource</class>

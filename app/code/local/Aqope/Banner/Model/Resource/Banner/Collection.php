@@ -4,6 +4,6 @@ class Aqope_Banner_Model_Resource_Banner_Collection extends Mage_Core_Model_Reso
     public function _construct()
     {
         parent::_construct();
-        $this->init('aqope_banner/banner');
+        $this->_init('banner/banner');
     }
 }
